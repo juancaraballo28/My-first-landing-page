@@ -3,54 +3,99 @@
         <title>
             Primer Landing Page
         </title>
+        <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Rubik&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/33f33e4bbf.js" crossorigin="anonymous"></script>
     </head>
     <style>
-        div{
-            padding :10px;
+        .logo{
+            height: 200px; 
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
         }
-        body{
-            
-            padding: 10px;
-        }
+        
         h2{
             font-family: 'Rubik', sans-serif;
-        }
-        .contenedor-principal{
-            display: grid;
-            border: 1px solid red;
-            grid-template-columns: 30% 10% 70%  ;
-            
+            font-size: 40px;
+            padding: 20px;
         }
         h1{
-            border: 1px solid red;
             text-align: center;
-            font-size: 50px;
+            font-size: 100px;
             font-family: 'Rubik', sans-serif;
+            padding: 20px;
         }
     
-        .description{
-            border: 1px solid red;
+        .item{
+           /* border: 1px solid red;*/
             font-size: 20px;
             font-family: 'Crimson Text', serif;
-            padding: 10px;
-            background-color: coral;
+            padding: 30px;
+            background-color: #f2f2f2;
+            text-align: justify;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .item-Quienes-somos{
+            
+            font-size: 20px;
+            font-family: 'Crimson Text', serif;
+            padding: 30px;
+            background-color: #f2f2f2;
             text-align: justify;
         }
+        .item-Quienes-somos p{
+            padding-left: 20px;
+        }
         .formulario{
-            border: 1px solid red;
+            /*border: 1px solid red;*/
+            display: flex;
+            justify-content: flex-start;
             text-align: center;
             font-family: 'Rubik', sans-serif;
+        }
+        .header{
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        footer{
+            font-family: 'Rubik', sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
         }
     </style>
     <body>
-  
-        <section class="contenedor-principal">
+        <div class="header">
 
-            <div class="description">
-                <h1>Hola soy Juan Felipe Caraballo</h1>
-                <h2>Acerca de mi</h2>
+            <img src="img/logo.jpeg"  class="logo">
+            <area >
+            <h1>Bienvenido</h1>
+        </div>
+        
+
+            
+    
+           
+                
+            
+            <div class="item-Quienes-somos">
+                
+                <h2>Quienes Somos</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                    standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
+                    type specimen book. It has survived not only five centuries.</p>
+                
+            </div>  
+
+            <div class="item">
+                
+                <h2>Nuestros Servicios</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
                     standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a 
                     type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining 
@@ -58,8 +103,12 @@
                     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 
             </div>
-    
-            <!--<div class="formulario">
+
+            <div class="item">
+                <h2>Contáctenos</h2>
+               <!--<button>Escribenos por WhatsAppp</button>-->
+
+                <div class="formulario">
                 <form action="" id="formulariocontacto">
                 <p>Nombre: <input type="text" name="Nombre" required> </p>
                 <p>Telefono: <input type="text" name="Telefono" required> </p>
@@ -68,16 +117,18 @@
                 </textarea>
     
                 </form>
-            </div>-->
-
-            <div class="contacto">
-                <h2>Contactame</h2>
-               <!--<button>Escribenos por WhatsAppp</button>-->
-                <i  class="fab fa-whatsapp"> </i>
+                </div>
+            
+                <i  class="fab fa-whatsapp"> 3506014089</i>
             </div>
-        </section>
+        </div>
+
+        <footer>
+            <p>ENCARGO SERVIR S.A.S</p>  <p>CALLE 30A # 6 - 22 OF. 2304 BOGOTÁ</p>    <p>(57-1) 6583957</p></footer>
+        </footer>
+        
         <!-- Start of Async Drift Code -->
-<script>
+<!--<script>
     "use strict";
     
     !function() {
