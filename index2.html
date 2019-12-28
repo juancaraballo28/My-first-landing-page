@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Rubik&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-template: 100px 1fr 1fr 60px / 1fr 1fr ;
+        grid-gap: 10px ;
+        height: 100vh; 
+        grid-template-areas: 
+            "header header" 
+            "left contenido" 
+            "left2 contenido"
+            "footer footer";
+    }
+      
+    .logo{
+        height: 200px; 
+        width: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+    h2{
+        font-family: 'Rubik', sans-serif;
+        font-size: 40px;
+        padding: 20px;
+    }
+    h1{
+        text-align: center;
+        font-size: 100px;
+        font-family: 'Rubik', sans-serif;
+        
+    }
+    .item{
+        background: #f2f2f2;
+        padding: 10px;
+        border: 1px solid red;
+    }        
+    .header{
+        grid-area: header;
+    }
+    .left{
+        grid-area: left;
+    }
+    .left2{
+        grid-area: left2;
+    }
+    .contenido{
+        grid-area: contenido;
+    }
+    .footer{
+        grid-area: footer;
+    }
+</style>
+<body>
+    <section class="container">
+        <div  class="item header">
+           
+        </div>
+
+        <div class="item left">
+            <h2>Nuestros Servicios</h2>
+        </div>
+
+        <div class="item left2">
+            <h2>Contáctenos</h2>
+            <div class="logos">
+    
+            <img src="img/instagram-brands.svg" alt="logo-instagram" width="40px" height="40px">
+            <img src="img/facebook-square-brands.svg" alt="logo-facebook" width="40px" height="40px">
+            <img src="img/linkedin-brands.svg" alt="logo-linkedin" width="40px" height="40px">
+            <img src="img/envelope-square-solid.svg" alt="logo-mail" width="40px" height="40px">
+            </div>
+        </div>
+
+        <div class="item contenido">
+
+        </div>
+
+        <div class="item footer">
+
+        </div>
+    </section>
+</body>
+</html>
