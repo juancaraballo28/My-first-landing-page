@@ -40,7 +40,7 @@
     .item{
         background: #f2f2f2;
         padding: 0;
-        /*border-radius: 5px;*/
+        border-radius: 5px;
         border: 1px solid blue;
     }        
     .header{
@@ -68,10 +68,6 @@
     .info{
         margin: 0;
         grid-area: info;
-        display: grid;
-        grid-template-areas: "info1"
-                             "info2";
-        grid-gap: 10px;
         padding: 10px;
     }
     .info h2{
@@ -82,13 +78,7 @@
     }
 
   
-    .info1{
-        grid-area: info1;
-    }
     
-    .info2{
-        grid-area: info2;
-    }
 
     
 
@@ -149,6 +139,55 @@
         padding: 10px;
     }
 
+    /*seccion instagram*/
+    .post{
+            cursor: pointer;
+            position: relative;
+            display: block;
+
+        }
+        .post-image{
+            margin: 0;
+
+        }
+        .post-image img{
+            width: 100%;
+            vertical-align: top;
+        }
+        .post-overlay{
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            left:0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+
+        }
+        .post:hover .post-overlay{
+            display: flex;
+        }
+        .post-likes,.post-comments{
+            width:80px;
+            margin: 5px;
+            font-weight: bold;
+            text-align:center;
+            display: inline-block;
+        }
+        .post-list{
+            display: grid;
+            grid-template-columns: repeat(2,minmax(100px,293px));
+            justify-content: center;
+            grid-gap: 28px;
+        }
+
+      .service-title{
+          margin: 20px;
+      }  
     @media screen and (max-width: 769px){
         .contactenos{
             grid-template-areas: "logos" "form";
@@ -213,29 +252,57 @@
             <h1>Bienvenido</h1>
         </div>
 
-        <div class="item info">
-
-            <div class="info info1">
-                <h2>Acerca de Nosotros</h2>
-              
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                  when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-          </div>
-         
-          <div class="info info2">
-            <h2>Nuestros Servicios</h2>
-              <ul>
-                  <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                  <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                  <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-                  <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry</li>
-              </ul>
-          </div>
+        <sec/section class="item info">
+            <h2 class="service-title">Nuestros Servicios</h2>
+            <section class="post-list">
+                <a href="" class="post">
+                    <figure class="post-image">
+                        <img src="compu.jpg" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </span>
+                </a>
+                <a href="" class="post">
+                    <figure class="post-image">
+                        <img src="compu.jpg" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </span>
+                </a><a href="" class="post">
+                    <figure class="post-image">
+                        <img src="compu.jpg" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </span>
+                </a><a href="" class="post">
+                    <figure class="post-image">
+                        <img src="compu.jpg" alt="">
+                    </figure>
+                    <span class="post-overlay">
+                        <p>
+                            <span class="post-likes">150</span>
+                            <span class="post-comments">10</span>
+                        </p>
+                    </span>
+                </a>
+            </section>    
+          
         </div>
           
 
-       <div class="item contactenos">
+      <!--  <div class="item contactenos">
             
             <div class="logos">
                 <h2>Contáctenos</h2>
@@ -256,14 +323,10 @@
                 <button type="submit">Enviar</button>
             </form>
             
-        </div>
+        </div> 
         <div class="item footer">
             <p> <span>ENCARGO SERVIR S.A.S </span> <span>PBX: (57-1) 6583957</span>  <span>CALLE 30A # 6 - 22 OF 2304</span> </p>
-        </div> 
+        </div> -->
     </section>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 06ef181fe935026e70941fe7fb0042b3b0a24599
