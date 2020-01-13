@@ -20,7 +20,7 @@
         display: grid;
         border: 1px solid red;
         height: 100vh;
-        grid-gap: 30px;
+        grid-gap: 20px;
         grid-template-rows: .3fr .5fr 1fr 1fr .2fr  ;
         
         
@@ -201,18 +201,7 @@
           margin: 20px;
       } 
     @media screen and (max-width: 769px){
-        .contactenos{
-            grid-template-areas: "logos" "form";
-            grid-template-columns :100%;
-            grid-template-rows: 30% 70%;
-            justify-items: initial;
-            padding: 10px;
-        }
-        .contactenos .logos{
-            margin-top: 0;
-            text-align: center;
-            margin-bottom: -30px;
-        }
+        
         .form{
             height: initial;
             width: initial;
