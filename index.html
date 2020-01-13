@@ -11,6 +11,7 @@
 <style>
     body{
         margin: 0;
+        text-align: center;
     }
         
 
@@ -19,6 +20,7 @@
         display: grid;
         border: 1px solid red;
         height: 100vh;
+        grid-gap: 30px;
         grid-template-rows: .3fr .5fr 1fr 1fr .2fr  ;
         
         
@@ -41,7 +43,7 @@
         background: #f2f2f2;
         padding: 0;
         border-radius: 5px;
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
     }        
     .header{
         grid-area: header;
@@ -69,9 +71,10 @@
         margin: 0;
         grid-area: info;
         padding: 10px;
+        text-align: center;
     }
     .info h2{
-        text-align: center;
+        
     }
     .info p,ul{
         font-size: .9em;
@@ -85,13 +88,17 @@
     .contactenos{
         grid-area: contactenos;
         display: grid;
-        grid-template-columns:40% 60%;
-        grid-template-areas: "logos form" ;
+        grid-template-columns:100%;
+        grid-template-areas: "title" "form" "logos" ;
+        grid-gap: 20px;
         padding: 20px;
         justify-items:center ;
+        text-align: center;
     }
     
- 
+    .contact-title{
+        grid-area: title;
+    }
     
     .form{
         grid-area: form;
@@ -99,6 +106,7 @@
         background: rgba(255, 255, 255, .9);
         padding: 1.5em;
         border-radius: 10px;
+        width: 600px;
     }
     .form input,textarea{
         width: 100%;
@@ -123,7 +131,7 @@
         display: inline-block;
     }
     .contactenos .logos{
-        margin-top: 25%;
+        
         grid-area: logos;
         
     }
@@ -172,6 +180,7 @@
             display: flex;
         }
         .post-likes,.post-comments{
+            font-size: 20px;
             width:80px;
             margin: 5px;
             font-weight: bold;
@@ -187,7 +196,10 @@
 
       .service-title{
           margin: 20px;
-      }  
+      } 
+      .post-list{
+          margin: 20px;
+      } 
     @media screen and (max-width: 769px){
         .contactenos{
             grid-template-areas: "logos" "form";
@@ -245,14 +257,14 @@
 </style>
 <body>
     <section class="container">
-        <div  class="item header">
+        <!--<div  class="item header">
            
             <img src="img/logo.jpeg" alt="" class="logo">
             
             <h1>Bienvenido</h1>
-        </div>
+        </div>-->
 
-        <sec/section class="item info">
+        <section class="item info">
             <h2 class="service-title">Nuestros Servicios</h2>
             <section class="post-list">
                 <a href="" class="post">
@@ -261,8 +273,8 @@
                     </figure>
                     <span class="post-overlay">
                         <p>
-                            <span class="post-likes">150</span>
-                            <span class="post-comments">10</span>
+                            <span class="post-likes">Venta de equipos de comunicación portatil</span>
+                            
                         </p>
                     </span>
                 </a>
@@ -272,8 +284,8 @@
                     </figure>
                     <span class="post-overlay">
                         <p>
-                            <span class="post-likes">150</span>
-                            <span class="post-comments">10</span>
+                            <span class="post-likes">Servicio Tecnico especializado</span>
+                            
                         </p>
                     </span>
                 </a><a href="" class="post">
@@ -302,10 +314,10 @@
         </div>
           
 
-      <!--  <div class="item contactenos">
-            
+       <div class="item contactenos">
+        <h2 class="contact-title">Contáctenos</h2>
             <div class="logos">
-                <h2>Contáctenos</h2>
+                
                 <img src="img/instagram-brands.svg" alt="logo-instagram" >
                 <img src="img/facebook-square-brands.svg" alt="logo-facebook">
                 <img src="img/linkedin-brands.svg" alt="logo-linkedin" >
@@ -326,7 +338,7 @@
         </div> 
         <div class="item footer">
             <p> <span>ENCARGO SERVIR S.A.S </span> <span>PBX: (57-1) 6583957</span>  <span>CALLE 30A # 6 - 22 OF 2304</span> </p>
-        </div> -->
+        </div> 
     </section>
 </body>
 </html>
