@@ -20,7 +20,7 @@
         display: grid;
         border: 1px solid red;
         height: 100vh;
-        grid-gap: 20px;
+        grid-gap: 40px;
         grid-template-rows: .3fr .5fr 1fr 1fr .2fr  ;
         
         
@@ -46,26 +46,31 @@
         /*border: 1px solid blue;*/
     }        
     .header{
+        text-align: left;
         grid-area: header;
-        display:grid;
-        grid-template-areas: "logo bienvenido";
-        padding: 10px 0;
+        display: inline-block;
+        justify-content: center;
+        background: #ffff;
+        /*display:grid;
+        grid-template-areas: "logo bienvenido";*/
+        padding: 0 0 10px 0;
         align-items: center;
         justify-items: center;
     }
     h1{
-        grid-area: bienvenido;
-
+        
+        text-align: center;
         margin: 0;
-        font-size: 70px;
+        font-size: 50px;
         font-family: 'Rubik', sans-serif;
         
     }
     .logo{
+        
         grid-area: logo;
         height: 100px; 
         width: 100px;
-        margin: 0;
+        margin-left: 40px;
     }
     .info{
         margin: 0;
@@ -265,12 +270,12 @@
 </style>
 <body>
     <section class="container">
-        <!--<div  class="item header">
+        <div  class="item header">
            
             <img src="img/logo.jpeg" alt="" class="logo">
             
-            <h1>Bienvenido</h1>
-        </div>-->
+            <h1>Bienvenido a Encargo Servir</h1>
+        </div>
 
         <section class="item info">
             <h2 class="service-title">Nuestros Servicios</h2>
@@ -329,12 +334,6 @@
                 <a href="" class="link facebook"></a>
                 <a href="" class="link linkedin"></a>
                 <a href="mailto:comercial@encargoservir.com" class="link mail"></a>
-
-               <!--  <img src="img/instagram-brands.svg" alt="logo-instagram" >
-                <img src="img/facebook-square-brands.svg" alt="logo-facebook">
-                <img src="img/linkedin-brands.svg" alt="logo-linkedin" >
-                <img src="img/envelope-square-solid.svg" alt="logo-mail" > 
-            -->
             </div>            
             
             <form action="" class="form">
