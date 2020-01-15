@@ -199,7 +199,26 @@
       } 
       .post-list{
           margin: 20px;
+      }
+      .link{
+        display: inline-block;
+         width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        background-size: 50px 50px;
+      }
+      .instagram{
+          background-image:url(./img/instagram.svg) ;
+      }
+      .facebook{
+          background-image: url(./img/facebook.svg);
       } 
+      .linkedin{
+          background-image: url(./img/linkedin.svg);
+      }
+      .mail{
+          background-image: url(./img/mail.svg);
+      }
     @media screen and (max-width: 769px){
         
         .form{
@@ -306,11 +325,16 @@
        <div class="item contactenos">
         <h2 class="contact-title">Contáctenos</h2>
             <div class="logos">
-                
-                <img src="img/instagram-brands.svg" alt="logo-instagram" >
+                <a href="https://google.com" class="link instagram"></a>
+                <a href="" class="link facebook"></a>
+                <a href="" class="link linkedin"></a>
+                <a href="mailto:comercial@encargoservir.com" class="link mail"></a>
+
+               <!--  <img src="img/instagram-brands.svg" alt="logo-instagram" >
                 <img src="img/facebook-square-brands.svg" alt="logo-facebook">
                 <img src="img/linkedin-brands.svg" alt="logo-linkedin" >
-                <img src="img/envelope-square-solid.svg" alt="logo-mail" >
+                <img src="img/envelope-square-solid.svg" alt="logo-mail" > 
+            -->
             </div>            
             
             <form action="" class="form">
